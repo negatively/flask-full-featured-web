@@ -1,5 +1,7 @@
-from __main__ import db
 from datetime import datetime
+from sqlalchemy.orm import backref
+from app import db
+
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
